@@ -5,7 +5,7 @@ arch: armv8
 
 script:
   - pip install --upgrade pip
-  - pip install conan
+  - pip install --user conan
 # - sudo apt-get install wiringpi
 
 #- sudo apt-get install git git-core
