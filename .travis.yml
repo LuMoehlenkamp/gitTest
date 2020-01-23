@@ -3,7 +3,8 @@ compiler: gcc
 os: linux
 
 script:
-- sudo apt-get install wiringpi
+  - sudo apt-get install conan
+# - sudo apt-get install wiringpi
 
 #- sudo apt-get install git git-core
 #- git clone git://git.drogon.net/wiringPi
