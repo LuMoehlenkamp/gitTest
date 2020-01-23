@@ -1,5 +1,6 @@
 language: cpp
 compiler: gcc
+os: raspian-latest
 
 script:
 - g++ main.cpp -o travis_gcc_cpp98
