@@ -1,7 +1,7 @@
 language: cpp
 compiler: gcc
 os: linux
-arch: armv7
+arch: armv8
 
 script:
   - pip install --upgrade pip
