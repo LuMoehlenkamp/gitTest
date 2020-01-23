@@ -1,10 +1,8 @@
 #include <iostream>
 
-int main()
-{
-  std::cout << "Hello world!\n";
-  
+int main() {
   for(int testVar = 0; testVar < 10; ++testVar) {
     std::cout << testVar; 
   }
+  std::cout << "Hello world!\n";
 }
