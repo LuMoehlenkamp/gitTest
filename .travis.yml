@@ -3,11 +3,12 @@ compiler: gcc
 os: raspian-latest
 
 script:
+- sudo apt-get install wiringpi
 
-- sudo apt-get install git git-core
-- git clone git://git.drogon.net/wiringPi
-- cd wiringPi
-- ./build
+#- sudo apt-get install git git-core
+#- git clone git://git.drogon.net/wiringPi
+#- cd wiringPi
+#- ./build
 
 - g++ main.cpp -o travis_gcc_cpp98
 - ./travis_gcc_cpp98
