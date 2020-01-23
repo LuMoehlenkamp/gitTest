@@ -4,6 +4,7 @@ os: linux
 arch: armv7
 
 script:
+  - pip install --upgrade pip
   - pip install conan
 # - sudo apt-get install wiringpi
 
