@@ -1,6 +1,6 @@
 language: cpp
 compiler: gcc
-os: raspian-latest
+os: linux
 
 script:
 - sudo apt-get install wiringpi
