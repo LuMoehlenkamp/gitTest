@@ -1,6 +1,7 @@
 language: cpp
 compiler: gcc
 os: linux
+arch: armv7hf
 
 script:
   - pip install conan
