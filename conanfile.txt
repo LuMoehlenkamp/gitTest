@@ -1,0 +1,2 @@
+[requires]
+wiringpi/2.50@conan/stable
