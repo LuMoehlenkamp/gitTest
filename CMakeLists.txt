@@ -7,4 +7,4 @@ cmake_minimum_required(VERSION 2.8.12)
  conan_basic_setup()
 
  add_executable(gitTest main.cpp)
- target_link_libraries(md5 ${CONAN_LIBS})
+ target_link_libraries(gitTest ${CONAN_LIBS})
