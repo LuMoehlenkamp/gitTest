@@ -1,2 +1,8 @@
+[settings]
+  arch=armv7hf
+  build_type=Debug
+  compiler=gcc
+  compiler.version=6
+  os=Linux
 [requires]
-wiringpi/2.50@conan/stable
+  wiringpi/2.50@conan/stable
