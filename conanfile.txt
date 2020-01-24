@@ -1,25 +1,4 @@
-[settings]
-    arch=armv7
-    build_type=Release
-    compiler=gcc
-    compiler.version=8.3
-    os=Linux
-
 [requires]
 
-[options]
-    shared=True
-
-[full_settings]
-    arch=armv7
-    build_type=Release
-    compiler=gcc
-    compiler.version=8.3
-    os=Linux
-
-[full_requires]
-
-[full_options]
-    shared=True
-    
-[env]
+[generators]
+cmake
