@@ -1,2 +1,2 @@
 [requires]
-  wiringpi/2.50:3794c445399e59754e413c5082079c7c9f0bf32a@conan/stable
+  wiringpi/2.50@conan/stable
