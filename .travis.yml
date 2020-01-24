@@ -1,11 +1,27 @@
-language: cpp
-compiler: gcc
 os: linux
+language: python
+python: "3.7"
+dist: xenial
 arch: armv8
+compiler:
+  - gcc
+  
+install:
+  - pip install conan
+  - conan user
+  - conan install .
+  - cmake . -G "Unix Makefiles"
+  - cmake --build .
+
+
+#language: cpp
+#compiler: gcc
+#os: linux
+#arch: armv8
 
 script:
-  - pip install --upgrade pip
-  - pip install --user conan
+#  - pip install --upgrade pip
+#  - pip install --user conan
 # - sudo apt-get install wiringpi
 
 #- sudo apt-get install git git-core
@@ -13,5 +29,5 @@ script:
 #- cd wiringPi
 #- ./build
 
-- g++ main.cpp -o travis_gcc_cpp98
+# - g++ main.cpp -o travis_gcc_cpp98
 - ./travis_gcc_cpp98
