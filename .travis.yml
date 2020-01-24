@@ -8,11 +8,11 @@ compiler:
   -arm64
   
 install:
-  - pip install conan
-  - conan user
-  - conan install .
-  - cmake . -G "Unix Makefiles"
-  - cmake --build .
+#  - pip install conan
+#  - conan user
+#  - conan install .
+#  - cmake . -G "Unix Makefiles"
+#  - cmake --build .
 
 
 #language: cpp
@@ -30,5 +30,5 @@ script:
 #- cd wiringPi
 #- ./build
 
-# - g++ main.cpp -o travis_gcc_cpp98
-- ./travis_gcc_cpp98
+ - g++ main.cpp -o travis_gcc_cpp98
+ - ./travis_gcc_cpp98
