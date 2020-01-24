@@ -2,7 +2,6 @@ os: linux
 language: python
 python: "3.7"
 dist: xenial
-arch: armv7
 compiler:
   - gcc
   
