@@ -4,6 +4,8 @@ python: "3.7"
 dist: xenial
 compiler:
   - gcc
+ arch:
+  -arm64
   
 install:
   - pip install conan
