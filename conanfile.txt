@@ -3,6 +3,3 @@ wiringpi/2.46@conan/stable
 
 [generators]
 cmake
-
-[settings]
-arch=armv7
