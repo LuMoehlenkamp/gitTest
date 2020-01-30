@@ -1,5 +1,5 @@
 #include <iostream>
-#include <wiringpi>
+// #include <wiringpi>
 
 int main() {
   for(int testVar = 0; testVar < 10; ++testVar) {
