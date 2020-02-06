@@ -1,34 +1,39 @@
-os: linux
-language: python
-python: "3.7"
-dist: xenial
-compiler:
-  - gcc
- arch:
-  -arm64
-  
-install:
-#  - pip install conan
-#  - conan user
-#  - conan install .
-#  - cmake . -G "Unix Makefiles"
-#  - cmake --build .
-
-
-#language: cpp
-#compiler: gcc
-#os: linux
-#arch: armv8
+language: cpp
+compiler: gcc
+os: raspian-latest
 
 script:
-#  - pip install --upgrade pip
-#  - pip install --user conan
-# - sudo apt-get install wiringpi
+- g++ main.cpp singleton.cpp -std=c++14 -o travis_gcc_cpp14
+# os: linux
+# language: python
+# python: "3.7"
+# dist: xenial
+# compiler:
+#   - gcc
+#  arch:
+#   -arm64
+#   
+# install:
+#   - pip install conan
+#   - conan user
+#   - conan install .
+#   - cmake . -G "Unix Makefiles"
+#   - cmake --build .# 
 
-#- sudo apt-get install git git-core
-#- git clone git://git.drogon.net/wiringPi
-#- cd wiringPi
-#- ./build
+#   - language: cpp
+#   - compiler: gcc
+#   - os: linux
+#   - arch: armv8# 
 
- - g++ main.cpp -o travis_gcc_cpp98
- - ./travis_gcc_cpp98
+# script:
+#   - pip install --upgrade pip
+#   - pip install --user conan
+#   - sudo apt-get install wiringpi# 
+
+# #- sudo apt-get install git git-core
+# #- git clone git://git.drogon.net/wiringPi
+# #- cd wiringPi
+# #- ./build# 
+
+#  - g++ main.cpp -o travis_gcc_cpp98
+#  - ./travis_gcc_cpp98# 

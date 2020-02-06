@@ -1,2 +1,5 @@
 /.vscode/*
 /build/**
+/.vs/**
+gitTest.sln
+/gitTest/**
