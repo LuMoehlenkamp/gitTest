@@ -8,22 +8,21 @@ compiler:
   -arm64
   
 install:
-#  - pip install conan
-#  - conan user
-#  - conan install .
-#  - cmake . -G "Unix Makefiles"
-#  - cmake --build .
+  - pip install conan
+  - conan user
+  - conan install .
+  - cmake . -G "Unix Makefiles"
+  - cmake --build .
 
-
-#language: cpp
-#compiler: gcc
-#os: linux
-#arch: armv8
+  - language: cpp
+  - compiler: gcc
+  - os: linux
+  - arch: armv8
 
 script:
-#  - pip install --upgrade pip
-#  - pip install --user conan
-# - sudo apt-get install wiringpi
+  - pip install --upgrade pip
+  - pip install --user conan
+  - sudo apt-get install wiringpi
 
 #- sudo apt-get install git git-core
 #- git clone git://git.drogon.net/wiringPi
