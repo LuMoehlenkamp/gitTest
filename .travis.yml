@@ -5,7 +5,7 @@ dist: xenial
 compiler:
   - gcc
  arch:
-  -arm64
+  - arm64
   
 install:
   - pip install conan
