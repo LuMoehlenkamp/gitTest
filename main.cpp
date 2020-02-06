@@ -1,4 +1,7 @@
 #include <iostream>
+
+#include "singleton.h"
+
 // #include <wiringpi>
 
 int main() {
@@ -6,4 +9,9 @@ int main() {
     std::cout << testVar << std::endl; 
   }
   std::cout << "Hello world!\n";
+  singleton *singleInst = singleton::getInstance();
+
+  singleton *secondInst = singleton::getInstance();
+
+  return 0;
 }
