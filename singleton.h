@@ -1,7 +1,7 @@
 class singleton
 {
 private:
-  static singleton* singletonInst;
+  static singleton* singletonInst = nullptr;
 
   singleton() {};
   singleton(const singleton&) = default;
