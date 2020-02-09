@@ -4,7 +4,7 @@
 
 // #include <wiringpi>
 
-// singleton * singleton::singletonInst = NULL;
+singleton * singleton::singletonInst = nullptr;
 
 int main() {
   for(int testVar = 0; testVar < 10; ++testVar) {
