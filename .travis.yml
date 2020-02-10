@@ -1,6 +1,7 @@
 language: cpp
 compiler: gcc
 os: linux
+python: "3.7"
 
 script:
 - g++ main.cpp singleton.cpp -std=c++14 -o gitTest
@@ -14,8 +15,8 @@ script:
 #   -arm64
 #   
 install:
-  - sudo pip install conan
-  - conan user
+  - pip install --upgrade pip
+  - sudo pip install --user conan
   - conan install .
 #  - cmake . -G "Unix Makefiles"
 #  - cmake --build . 
