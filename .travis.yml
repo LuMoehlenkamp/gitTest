@@ -9,7 +9,7 @@ before_install:
   - python --version
 
 install:
-  - sudo pip install -U pip
+  #- sudo pip install -U pip
   - sudo pip install conan
   - conan user
 
