@@ -11,6 +11,7 @@ before_install:
   - python3 --version
   - pip --version
   - pip3 --version
+  - sudo apt-get --purge remove python2
 
 install:
   #- sudo pip install -U pip
