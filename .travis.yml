@@ -3,7 +3,7 @@ compiler: gcc
 os: raspian-latest
 
 script:
-- g++ main.cpp singleton.cpp -std=c++14 -o travis_gcc_cpp14
+- g++ main.cpp -std=c++14 -o gitTest
 # os: linux
 # language: python
 # python: "3.7"
@@ -13,12 +13,12 @@ script:
 #  arch:
 #   -arm64
 #   
-# install:
-#   - pip install conan
-#   - conan user
-#   - conan install .
-#   - cmake . -G "Unix Makefiles"
-#   - cmake --build .# 
+install:
+  - pip install conan
+  - conan user
+  - conan install .
+  - cmake . -G "Unix Makefiles"
+  - cmake --build . 
 
 #   - language: cpp
 #   - compiler: gcc
