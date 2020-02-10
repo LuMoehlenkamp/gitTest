@@ -5,8 +5,11 @@ dist: "xenial"
 compiler: 
   - gcc
 
+before_install:
+  - python --version
+
 install:
-  - sudo pip install --upgrade pip
+  - sudo pip install -U pip
   - sudo pip install conan
   - conan user
 
