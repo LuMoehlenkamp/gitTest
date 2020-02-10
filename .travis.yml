@@ -1,7 +1,6 @@
 language: cpp
 compiler: gcc
 os: linux
-sudo: true
 
 script:
 - g++ main.cpp -std=c++14 -o gitTest
@@ -15,7 +14,7 @@ script:
 #   -arm64
 #   
 install:
-  - pip install conan
+  - sudo pip install conan
   - conan user
   - conan install .
   - cmake . -G "Unix Makefiles"
