@@ -9,10 +9,12 @@ compiler:
 before_install:
   - python --version
   - python3 --version
+  - pip --version
+  - pip3 --version
 
 install:
   #- sudo pip install -U pip
-  - sudo pip install --user conan
+  - sudo -H pip install --user conan
   #- source ~/.profile
 
 script:
