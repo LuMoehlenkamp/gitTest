@@ -15,7 +15,7 @@ before_install:
 
 install:
   #- sudo pip install -U pip
-  - sudo -H pip install --user --python-version "3.7" conan
+  - sudo -H pip install --user --python-version "3.7.1" --no-deps conan
   #- source ~/.profile
 
 script:
