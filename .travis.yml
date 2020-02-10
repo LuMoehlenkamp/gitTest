@@ -10,8 +10,9 @@ before_install:
 
 install:
   #- sudo pip install -U pip
-  - sudo pip install conan
+  - sudo pip install --user conan
   - conan user
+  #- source ~/.profile
 
 script:
   - mkdir build
