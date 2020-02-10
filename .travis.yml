@@ -11,11 +11,11 @@ before_install:
   - python3 --version
   - pip --version
   - pip3 --version
-  - sudo apt-get --purge remove python2
+  #- sudo apt-get --purge remove python2
 
 install:
   #- sudo pip install -U pip
-  - sudo -H pip install --user conan
+  - sudo -H pip install --user --python-version "3.7" conan
   #- source ~/.profile
 
 script:
