@@ -1,5 +1,5 @@
 os: linux
-language: python
+language: python3
 python: "3.7"
 dist: "xenial"
 compiler: 
