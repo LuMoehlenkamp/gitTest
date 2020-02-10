@@ -6,8 +6,8 @@ compiler:
   - gcc
 
 install:
-  - sudo pip install --upgrade pip
-  - sudo pip install --user conan
+  - sudo pip3 install --upgrade pip
+  - sudo pip3 install --user conan
 
 script:
   - mkdir build
