@@ -6,7 +6,7 @@ compiler:
   - gcc
 
 install:
-  - sudo pip3 install --upgrade pip3
+  - sudo pip3 install --upgrade pip
   - sudo pip3 install conan
   - conan user
 
