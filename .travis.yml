@@ -14,7 +14,7 @@ script:
   - cd build
   - conan install ..
   - conan build ..
-
+  - cd ..
   - g++ main.cpp singleton.cpp -std=c++14 -o gitTest
 # os: linux
 # language: python
