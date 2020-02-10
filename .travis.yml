@@ -1,10 +1,21 @@
-language: cpp
-compiler: gcc
 os: linux
+language: python
 python: "3.7"
+dist: "xenial"
+compiler: 
+  - gcc
+
+install:
+  - sudo pip install --upgrade pip
+  - sudo pip install --user conan
 
 script:
-- g++ main.cpp singleton.cpp -std=c++14 -o gitTest
+  - mkdir build
+  - cd build
+  - conan install ..
+  - conan build ..
+
+  - g++ main.cpp singleton.cpp -std=c++14 -o gitTest
 # os: linux
 # language: python
 # python: "3.7"
@@ -14,30 +25,23 @@ script:
 #  arch:
 #   -arm64
 #   
-install:
-  - sudo pip install --upgrade pip
-  - sudo pip install --user conan
-  - mkdir build
-  - cd build
-  - conan install ..
 #  - cmake . -G "Unix Makefiles"
 #  - cmake --build . 
-  - conan build ..
 
 #   - language: cpp
 #   - compiler: gcc
 #   - os: linux
-#   - arch: armv8# 
+#   - arch: armv8
 
 # script:
 #   - pip install --upgrade pip
 #   - pip install --user conan
-#   - sudo apt-get install wiringpi# 
+#   - sudo apt-get install wiringpi
 
 # #- sudo apt-get install git git-core
 # #- git clone git://git.drogon.net/wiringPi
 # #- cd wiringPi
-# #- ./build# 
+# #- ./build
 
 #  - g++ main.cpp -o travis_gcc_cpp98
-#  - ./travis_gcc_cpp98# 
+#  - ./travis_gcc_cpp98
