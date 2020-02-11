@@ -1,8 +1,12 @@
 os: linux
+dist: "xenial"
+
 language: python
 python: 
-  - 3.7
-dist: "xenial"
+  - "3.7"
+virtualenv:
+  system_site_packages: true
+
 compiler: 
   - gcc
 
@@ -14,8 +18,8 @@ before_install:
   #- sudo apt-get --purge remove python2
 
 install:
-  #- sudo pip install -U pip
-  - sudo -H pip install --user --python-version "3.7.1" --no-deps conan
+  - sudo pip install -U pip
+  #- sudo -H pip install --user --python-version "3.7.1" --no-deps conan
   #- source ~/.profile
 
 script:
