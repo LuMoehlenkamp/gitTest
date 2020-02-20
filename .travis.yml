@@ -19,7 +19,7 @@ before_install:
 
 install:
   - sudo pip install -U pip
-  - sudo pip3 install -U pip
+  - pip3 install -U pip
   - sudo pip3 install conan
   #- conan profile update settings.compiler.libcxx=libstdc++11 default
   #- sudo -H pip install --user --python-version "3.7.1" --no-deps conan
