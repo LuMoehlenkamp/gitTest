@@ -1,9 +1,9 @@
 os: linux
 dist: "xenial"
 
-#language: python
-#python: 
-#  - "3.7.1"
+language: python
+python: 
+ - "3.7.1"
 #virtualenv:
 #  system_site_packages: true
 
@@ -14,7 +14,6 @@ before_install:
   - python --version
   - python3 --version
   - pip --version
-  - pip3 --version
   #- sudo apt-get --purge remove python2
 
 install:
