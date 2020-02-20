@@ -21,16 +21,16 @@ install:
   - sudo pip install -U pip
   - pip3 install -U pip
   - pip3 install conan
-  #- conan profile update settings.compiler.libcxx=libstdc++11 default
+  - conan profile update settings.compiler.libcxx=libstdc++11 default
   #- sudo -H pip install --user --python-version "3.7.1" --no-deps conan
   #- source ~/.profile
 
 script:
-  - mkdir build
-  - cd build
-  - conan install ..
-  - conan build ..
-  - cd ..
+  #- mkdir build
+  #- cd build
+  - conan install .
+  - conan build .
+  #- cd ..
   - g++ main.cpp singleton.cpp -std=c++14 -o gitTest
 # os: linux
 # language: python
