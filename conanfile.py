@@ -18,8 +18,8 @@ class HelloConan(ConanFile):
         # properly
         tools.replace_in_file("hello/CMakeLists.txt", "PROJECT(gitTest)",
                               '''PROJECT(gitTest)
-        # include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
-        # conan_basic_setup()''')
+                              include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
+                              conan_basic_setup()''')
 
     def build(self):
         cmake = CMake(self)
