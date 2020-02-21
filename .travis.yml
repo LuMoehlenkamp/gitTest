@@ -1,3 +1,4 @@
+# <<<<<<< strategyTest
 os: linux
 dist: "xenial"
 
@@ -35,6 +36,20 @@ script:
   - conan build .
   #- cd ..
   - g++ main.cpp singleton.cpp -std=c++14 -o gitTest
+# =======
+#language: cpp
+#compiler: gcc
+#os: linux
+
+#install:
+#  - pip install conan
+#
+#script:
+#  - cmake . -G "Unix Makefiles"
+#  - cmake --build .
+#  
+#- g++ main.cpp singleton.cpp -std=c++14 -o travis_gcc_cpp14
+#>>>>>>
 # os: linux
 # language: python
 # python: "3.7"
