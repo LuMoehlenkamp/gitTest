@@ -23,7 +23,7 @@ class HelloConan(ConanFile):
 
     def build(self):
         cmake = CMake(self)
-        cmake.configure(source_folder="gitTest")
+        cmake.configure()
         cmake.build()
 
         # Explicit way:
