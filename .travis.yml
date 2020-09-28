@@ -35,4 +35,4 @@ script:
   - conan install .
   - conan build .
   #- cd ..
-  - g++ main.cpp singleton.cpp -std=c++14 -o gitTest
+  - g++ main.cpp singleton.cpp strategy.cpp -std=c++14 -o gitTest
