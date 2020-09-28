@@ -11,8 +11,8 @@ class Context {
   std::unique_ptr<Strategy> strat_;
 public:
   Context() : strat_(nullptr) {}
-  void setStrategy(std::unique_ptr<Strategy> strat); // {strat_ = std::move(strat); }
-  void strategy() { if (strat_) (*strat_) ();}
+  void setStrategy(std::unique_ptr<Strategy> strat);
+  void strategy(); // { if (strat_) (*strat_) ();}
 };
 
 class Strategy1 : public Strategy {
