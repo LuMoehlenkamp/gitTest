@@ -12,7 +12,7 @@ class Context {
 public:
   Context() : strat_(nullptr) {}
   void setStrategy(std::unique_ptr<Strategy> strat);
-  void strategy(); // { if (strat_) (*strat_) ();}
+  void strategy();
 };
 
 class Strategy1 : public Strategy {
