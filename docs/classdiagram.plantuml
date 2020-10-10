@@ -1,0 +1,15 @@
+@startuml 
+title Strategy Class Diagram
+
+class Strategy 
+class Strategy1
+class Strategy2
+class Strategy3
+class Context
+
+Context o--> Strategy
+Strategy <|-- Strategy1
+Strategy <|-- Strategy2
+Strategy <|-- Strategy3
+
+@enduml
