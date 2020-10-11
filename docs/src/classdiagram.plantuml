@@ -1,5 +1,5 @@
 @startuml 
-title Strategy Class Diagram
+title StrategyClassDiagram
 
 class Strategy 
 class Strategy1
