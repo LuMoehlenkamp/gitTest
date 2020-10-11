@@ -1,11 +1,25 @@
 @startuml 
 title StrategyClassDiagram
 
-class Strategy 
-class Strategy1
-class Strategy2
-class Strategy3
-class Context
+class Strategy {
+  + operator()() = 0
+}
+
+class Strategy1 {
+  + operator()()
+}
+class Strategy2 {
+  + operator()()
+}
+class Strategy3 {
+  + operator()()
+}
+class Context {
+  - std::unique_ptr<Strategy> strat_
+  + Context()
+  + setStrategy(std::unique_ptr<Strategy strat)
+  + strategy()
+}
 
 Context o--> Strategy
 Strategy <|-- Strategy1
