@@ -5,4 +5,4 @@
 
 # Class Diagram
 
-![ClassDiagram](/docs/out/Strategy%20Class%20Diagram.svg)
+![ClassDiagram](/docs/out/StrategyClassDiagram.svg)
