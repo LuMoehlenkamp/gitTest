@@ -5,4 +5,4 @@
 
 # Class Diagram
 
-(https://github.com/LuMoehlenkamp/gitTest/blob/master/docs/out/Strategy%20Class%20Diagram.svg)
+![ClassDiagram](https://github.com/LuMoehlenkamp/gitTest/blob/master/docs/out/Strategy%20Class%20Diagram.svg)
