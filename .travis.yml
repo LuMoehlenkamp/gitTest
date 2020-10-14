@@ -36,3 +36,5 @@ script:
   - conan build .
   #- cd ..
   - g++ main.cpp singleton.cpp strategy.cpp -std=c++14 -o gitTest
+  - g++ gitTesttest.cpp singleton.cpp -std=c++14 -o gitTestTest
+  - ./gitTestTest
