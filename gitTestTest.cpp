@@ -12,5 +12,6 @@ BOOST_AUTO_TEST_CASE(instanciate_singleton)
   singleton* secondInst = singleton::getInstance();
 
   BOOST_CHECK( firstInst != nullptr);
-  BOOST_CHECK( secondInst == nullptr);
+  BOOST_CHECK( secondInst != nullptr);
+  BOOST_CHECK( secondInst == firstInst);
 }
