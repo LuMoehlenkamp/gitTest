@@ -4,9 +4,10 @@
 #include <boost/test/unit_test.hpp>
 #include "singleton.h"
 
+singleton* singleton::singletonInst = nullptr;
+
 BOOST_AUTO_TEST_CASE(instanciate_singleton)
 {
-  singleton* singleton::singletonInst = nullptr;
   singleton* firstInst = singleton::getInstance();
   singleton* secondInst = singleton::getInstance();
 
