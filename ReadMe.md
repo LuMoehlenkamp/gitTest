@@ -6,4 +6,7 @@
 # Class Diagram
 
 ![StrategyClassDiagram](/docs/src/StrategyClassDiagram.svg)
+
+# Design Pattern MindMap
+
 ![MindMap](/docs/src/DesignPatternMindMap.svg)
