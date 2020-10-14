@@ -19,6 +19,7 @@ before_install:
 
 install:
   - sudo pip install -U pip
+  - sudo apt install -qq libboost-all-dev
   - pip3 install -U pip
   - pip3 install conan
   - pip3 install conan_package_tools
