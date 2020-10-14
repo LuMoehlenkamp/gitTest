@@ -1,5 +1,6 @@
 @startmindmap
 title DesignPatternMindMap
+skinparam shadowing false 
 
 * Design Pattern
 

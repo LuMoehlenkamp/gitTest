@@ -1,5 +1,6 @@
 @startuml 
 title StrategyClassDiagram
+skinparam shadowing false
 
 class Strategy {
   + operator()() = 0
