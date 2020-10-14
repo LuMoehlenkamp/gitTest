@@ -28,5 +28,6 @@ Context o--> Strategy
 Strategy <|-- Strategy1
 Strategy <|-- Strategy2
 Strategy <|-- Strategy3
+Context -- TEST
 
 @enduml
