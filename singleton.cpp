@@ -8,3 +8,4 @@ singleton* singleton::getInstance() {
   }  
   return singletonInst;
 }
+// test
