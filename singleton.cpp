@@ -9,3 +9,4 @@ singleton* singleton::getInstance() {
   return singletonInst;
 }
 // test
+// another test
